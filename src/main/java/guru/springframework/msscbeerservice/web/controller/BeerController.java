@@ -24,7 +24,7 @@ public class BeerController {
     public ResponseEntity<BeerDto> saveNewBeer(@RequestBody BeerDto beerDto){
         //todo impl
 
-        ResponseEntity<BeerDto> response = new ResponseEntity<>(HttpStatus.OK);
+        ResponseEntity<BeerDto> response = new ResponseEntity<>(HttpStatus.CREATED);
 
         return response;
 
@@ -34,7 +34,7 @@ public class BeerController {
     public ResponseEntity updateBeerById(@PathVariable("beerId") UUID beerId, @RequestBody  BeerDto beerDto){
         //todo impl
 
-        ResponseEntity response = new ResponseEntity<>(HttpStatus.OK);
+        ResponseEntity response = new ResponseEntity<>(HttpStatus.NO_CONTENT);
 
         return response;
 
